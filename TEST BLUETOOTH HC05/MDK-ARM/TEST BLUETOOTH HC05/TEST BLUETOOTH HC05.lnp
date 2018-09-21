@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"test bluetooth hc05\stm32f1xx_hal_cortex.o"
+"test bluetooth hc05\stm32f1xx_hal_dma.o"
+"test bluetooth hc05\stm32f1xx_hal_rcc.o"
+"test bluetooth hc05\stm32f1xx_hal_uart.o"
+"test bluetooth hc05\stm32f1xx_hal_rcc_ex.o"
+"test bluetooth hc05\stm32f1xx_hal_gpio_ex.o"
+"test bluetooth hc05\stm32f1xx_hal_flash_ex.o"
+"test bluetooth hc05\stm32f1xx_hal_gpio.o"
+"test bluetooth hc05\stm32f1xx_hal_pwr.o"
+"test bluetooth hc05\stm32f1xx_hal.o"
+"test bluetooth hc05\stm32f1xx_hal_flash.o"
+"test bluetooth hc05\stm32f1xx_hal_tim.o"
+"test bluetooth hc05\stm32f1xx_hal_tim_ex.o"
+"test bluetooth hc05\stm32f1xx_it.o"
+"test bluetooth hc05\main.o"
+"test bluetooth hc05\stm32f1xx_hal_msp.o"
+"test bluetooth hc05\system_stm32f1xx.o"
+"test bluetooth hc05\startup_stm32f103xe.o"
+--library_type=microlib --strict --scatter "TEST BLUETOOTH HC05\TEST BLUETOOTH HC05.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "TEST BLUETOOTH HC05.map" -o "TEST BLUETOOTH HC05\TEST BLUETOOTH HC05.axf"

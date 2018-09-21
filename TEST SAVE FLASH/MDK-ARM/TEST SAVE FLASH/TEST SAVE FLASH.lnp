@@ -1,0 +1,22 @@
+--cpu Cortex-M3
+"test save flash\stm32f1xx_hal_flash.o"
+"test save flash\stm32f1xx_hal_rcc_ex.o"
+"test save flash\stm32f1xx_hal_cortex.o"
+"test save flash\stm32f1xx_hal_rcc.o"
+"test save flash\stm32f1xx_hal_tim.o"
+"test save flash\stm32f1xx_hal_flash_ex.o"
+"test save flash\stm32f1xx_hal_dma.o"
+"test save flash\stm32f1xx_hal_pwr.o"
+"test save flash\stm32f1xx_hal_tim_ex.o"
+"test save flash\stm32f1xx_hal_gpio_ex.o"
+"test save flash\stm32f1xx_hal.o"
+"test save flash\stm32f1xx_hal_gpio.o"
+"test save flash\main.o"
+"test save flash\stm32f1xx_hal_msp.o"
+"test save flash\stm32f1xx_it.o"
+"test save flash\startup_stm32f103xe.o"
+"test save flash\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "TEST SAVE FLASH\TEST SAVE FLASH.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "TEST SAVE FLASH.map" -o "TEST SAVE FLASH\TEST SAVE FLASH.axf"

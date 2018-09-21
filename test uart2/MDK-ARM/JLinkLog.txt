@@ -1,0 +1,13 @@
+
+T1E88 004:467 SEGGER J-Link V5.12f Log File (0007ms, 0012ms total)
+T1E88 004:467 DLL Compiled: May 17 2016 16:03:35 (0007ms, 0012ms total)
+T1E88 004:467 Logging started @ 2017-10-22 13:13 (0007ms, 0012ms total)
+T1E88 004:474 JLINK_SetWarnOutHandler(...) (0000ms, 0012ms total)
+T1E88 004:474 JLINK_OpenEx(...)
+  ***** Error: Can not connect to J-Link via USB.  returns "Can not connect to J-Link via USB." (0000ms, 0012ms total)
+
+  ***** API Error: API JLINK_GetHardwareVersion function called before JLINKARM_Open()
+T1E88 004:475 
+  ***** Error: Can not connect to J-Link via USB.JLINK_Close() (0000ms, 0012ms total)
+T1E88 009:330  (0000ms, 0012ms total)
+T1E88 009:330 Closed (0000ms, 0012ms total)

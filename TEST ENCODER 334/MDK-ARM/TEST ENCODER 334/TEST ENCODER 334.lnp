@@ -1,0 +1,22 @@
+--cpu Cortex-M3
+"test encoder 334\main.o"
+"test encoder 334\stm32f1xx_hal_msp.o"
+"test encoder 334\stm32f1xx_it.o"
+"test encoder 334\system_stm32f1xx.o"
+"test encoder 334\startup_stm32f103xe.o"
+"test encoder 334\stm32f1xx_hal_gpio.o"
+"test encoder 334\stm32f1xx_hal_pwr.o"
+"test encoder 334\stm32f1xx_hal_rcc_ex.o"
+"test encoder 334\stm32f1xx_hal_cortex.o"
+"test encoder 334\stm32f1xx_hal_gpio_ex.o"
+"test encoder 334\stm32f1xx_hal_flash.o"
+"test encoder 334\stm32f1xx_hal_rcc.o"
+"test encoder 334\stm32f1xx_hal_dma.o"
+"test encoder 334\stm32f1xx_hal_tim_ex.o"
+"test encoder 334\stm32f1xx_hal.o"
+"test encoder 334\stm32f1xx_hal_flash_ex.o"
+"test encoder 334\stm32f1xx_hal_tim.o"
+--library_type=microlib --strict --scatter "TEST ENCODER 334\TEST ENCODER 334.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "TEST ENCODER 334.map" -o "TEST ENCODER 334\TEST ENCODER 334.axf"

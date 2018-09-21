@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"test esp 8266\system_stm32f1xx.o"
+"test esp 8266\main.o"
+"test esp 8266\stm32f1xx_hal_msp.o"
+"test esp 8266\stm32f1xx_it.o"
+"test esp 8266\startup_stm32f103xe.o"
+"test esp 8266\stm32f1xx_hal_cortex.o"
+"test esp 8266\stm32f1xx_hal_uart.o"
+"test esp 8266\stm32f1xx_hal.o"
+"test esp 8266\stm32f1xx_hal_tim.o"
+"test esp 8266\stm32f1xx_hal_rcc_ex.o"
+"test esp 8266\stm32f1xx_hal_rcc.o"
+"test esp 8266\stm32f1xx_hal_flash_ex.o"
+"test esp 8266\stm32f1xx_hal_tim_ex.o"
+"test esp 8266\stm32f1xx_hal_pwr.o"
+"test esp 8266\stm32f1xx_hal_gpio_ex.o"
+"test esp 8266\stm32f1xx_hal_flash.o"
+"test esp 8266\stm32f1xx_hal_gpio.o"
+"test esp 8266\stm32f1xx_hal_dma.o"
+--library_type=microlib --strict --scatter "TEST ESP 8266\TEST ESP 8266.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "TEST ESP 8266.map" -o "TEST ESP 8266\TEST ESP 8266.axf"

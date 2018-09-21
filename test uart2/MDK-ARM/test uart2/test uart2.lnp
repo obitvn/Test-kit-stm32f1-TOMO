@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"test uart2\stm32f1xx_it.o"
+"test uart2\stm32f1xx_hal_msp.o"
+"test uart2\main.o"
+"test uart2\stm32f1xx_hal_gpio.o"
+"test uart2\stm32f1xx_hal_pwr.o"
+"test uart2\stm32f1xx_hal_uart.o"
+"test uart2\stm32f1xx_hal_tim.o"
+"test uart2\stm32f1xx_hal.o"
+"test uart2\stm32f1xx_hal_dma.o"
+"test uart2\stm32f1xx_hal_tim_ex.o"
+"test uart2\stm32f1xx_hal_gpio_ex.o"
+"test uart2\stm32f1xx_hal_flash.o"
+"test uart2\stm32f1xx_hal_flash_ex.o"
+"test uart2\stm32f1xx_hal_rcc_ex.o"
+"test uart2\stm32f1xx_hal_rcc.o"
+"test uart2\stm32f1xx_hal_cortex.o"
+"test uart2\system_stm32f1xx.o"
+"test uart2\startup_stm32f103xe.o"
+--library_type=microlib --strict --scatter "test uart2\test uart2.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "test uart2.map" -o "test uart2\test uart2.axf"

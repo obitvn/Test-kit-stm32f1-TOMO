@@ -1,0 +1,143 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.23.0.0
+Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Chu Thinh, Tesla Thinh, LIC=RC9PC-7GGU3-W22LL-0GETX-NI0FT-8153R
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.23
+Toolchain Path:  E:\Cai Phan Mem\Keil C ARM\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 4 (build 422)
+Assembler:       Armasm.exe V5.06 update 4 (build 422)
+Linker/Locator:  ArmLink.exe V5.06 update 4 (build 422)
+Library Manager: ArmAr.exe V5.06 update 4 (build 422)
+Hex Converter:   FromElf.exe V5.06 update 4 (build 422)
+CPU DLL:         SARMCM3.DLL V5.23
+Dialog DLL:      DCM.DLL V1.15.0.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.18.0
+Dialog DLL:      TCM.DLL V1.27.0.0
+ 
+<h2>Project:</h2>
+F:\Hoc\project\TEST KIT TO MO\TEST RTC\MDK-ARM\TEST RTC.uvprojx
+Project File Date:  06/28/2017
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 4 (build 422)', folder: 'E:\Cai Phan Mem\Keil C ARM\ARM\ARMCC\Bin'
+Rebuild target 'TEST RTC'
+assembling startup_stm32f103xe.s...
+compiling stm32f1xx_hal_msp.c...
+compiling stm32f1xx_it.c...
+compiling main.c...
+../Inc/lcd1602.h(13): warning:  #188-D: enumerated type mixed with another type
+  HAL_GPIO_WritePin(
+PIOC,
+N_Pin,1);
+../Inc/lcd1602.h(15): warning:  #188-D: enumerated type mixed with another type
+  HAL_GPIO_WritePin(
+PIOC,
+N_Pin,0);  
+../Inc/lcd1602.h(21): warning:  #188-D: enumerated type mixed with another type
+  HAL_GPIO_WritePin(
+PIOC,
+../Inc/lcd1602.h(22): warning:  #188-D: enumerated type mixed with another type
+  HAL_GPIO_WritePin(
+PIOC,
+../Inc/lcd1602.h(23): warning:  #188-D: enumerated type mixed with another type
+  HAL_GPIO_WritePin(
+PIOC,
+../Inc/lcd1602.h(24): warning:  #188-D: enumerated type mixed with another type
+  HAL_GPIO_WritePin(
+PIOC,
+../Inc/lcd1602.h(43): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(
+PIOC,
+W_Pin,0);
+../Inc/lcd1602.h(45): warning:  #188-D: enumerated type mixed with another type
+    HAL_GPIO_WritePin(
+PIOC,
+S_Pin,0);
+../Inc/lcd1602.h(69): warning:  #188-D: enumerated type mixed with another type
+    HAL_GPIO_WritePin(
+PIOC,
+S_Pin,1);
+../Inc/lcd1602.h(71): warning:  #188-D: enumerated type mixed with another type
+    HAL_GPIO_WritePin(
+PIOC,
+S_Pin,0);
+../Inc/lcd1602.h(80): warning:  #1-D: last line of file ends without a newline
+  }
+../Src/main.c(32): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(
+PIOC,
+W_Pin,0);
+../Src/main.c(54): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  	sprintf(giay,"%d",Second);
+../Src/main.c(55): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  	sprintf(phut,"%d",Minute);
+../Src/main.c(56): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  	sprintf(gio,"%d",Hour);
+../Src/main.c(57): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  	sprintf(ngay,"%d",Date);
+../Src/main.c(58): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+    sprintf(thang,"%d",Month);
+../Src/main.c(59): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  	sprintf(nam,"%d",(Year+2017));
+../Src/main.c(61): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+  	LCD_Puts(gio);
+../Src/main.c(63): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+  	LCD_Puts(phut);
+../Src/main.c(65): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+  	LCD_Puts(giay);
+../Src/main.c(67): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+  	LCD_Puts(ngay);
+../Src/main.c(69): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+  	LCD_Puts(thang);
+../Src/main.c(71): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+  	LCD_Puts(nam);
+../Src/main.c(197): warning:  #188-D: enumerated type mixed with another type
+                            |
+PIO_PIN_SET);
+../Src/main.c: 25 warnings, 0 errors
+compiling stm32f1xx_hal_tim_ex.c...
+compiling stm32f1xx_hal_rtc.c...
+compiling stm32f1xx_hal_pwr.c...
+compiling stm32f1xx_hal_rcc.c...
+compiling stm32f1xx_hal_dma.c...
+compiling stm32f1xx_hal_tim.c...
+compiling stm32f1xx_hal_cortex.c...
+compiling stm32f1xx_hal_rtc_ex.c...
+compiling stm32f1xx_hal_rcc_ex.c...
+compiling stm32f1xx_hal_flash.c...
+compiling stm32f1xx_hal_flash_ex.c...
+compiling stm32f1xx_hal_gpio_ex.c...
+compiling stm32f1xx_hal_gpio.c...
+compiling stm32f1xx_hal.c...
+compiling system_stm32f1xx.c...
+linking...
+Program Size: Code=6732 RO-data=360 RW-data=52 ZI-data=1044  
+FromELF: creating hex file...
+"TEST RTC\TEST RTC.axf" - 0 Error(s), 25 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.0.1.pack
+                ARM::CMSIS:CORE:5.0.1
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.0.1
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_TEST_RTC
+  E:\Cai Phan Mem\Keil C ARM\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include
+  E:\Cai Phan Mem\Keil C ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.0.1
+Build Time Elapsed:  00:00:37
+</pre>
+</body>
+</html>

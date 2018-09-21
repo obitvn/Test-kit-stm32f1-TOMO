@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"test uart\main.o"
+"test uart\stm32f1xx_it.o"
+"test uart\stm32f1xx_hal_msp.o"
+"test uart\stm32f1xx_hal_cortex.o"
+"test uart\stm32f1xx_hal_dma.o"
+"test uart\stm32f1xx_hal.o"
+"test uart\stm32f1xx_hal_flash.o"
+"test uart\stm32f1xx_hal_rcc.o"
+"test uart\stm32f1xx_hal_flash_ex.o"
+"test uart\stm32f1xx_hal_pwr.o"
+"test uart\stm32f1xx_hal_gpio.o"
+"test uart\stm32f1xx_hal_gpio_ex.o"
+"test uart\stm32f1xx_hal_rcc_ex.o"
+"test uart\stm32f1xx_hal_uart.o"
+"test uart\stm32f1xx_hal_tim.o"
+"test uart\stm32f1xx_hal_tim_ex.o"
+"test uart\system_stm32f1xx.o"
+"test uart\startup_stm32f103xe.o"
+--library_type=microlib --strict --scatter "TEST UART\TEST UART.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "TEST UART.map" -o "TEST UART\TEST UART.axf"

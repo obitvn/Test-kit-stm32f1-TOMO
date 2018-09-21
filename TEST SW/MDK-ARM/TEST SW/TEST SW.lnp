@@ -1,0 +1,22 @@
+--cpu Cortex-M3
+"test sw\stm32f1xx_hal.o"
+"test sw\stm32f1xx_hal_rcc_ex.o"
+"test sw\stm32f1xx_hal_flash_ex.o"
+"test sw\stm32f1xx_hal_tim.o"
+"test sw\stm32f1xx_hal_cortex.o"
+"test sw\stm32f1xx_hal_dma.o"
+"test sw\stm32f1xx_hal_tim_ex.o"
+"test sw\stm32f1xx_hal_gpio.o"
+"test sw\stm32f1xx_hal_gpio_ex.o"
+"test sw\stm32f1xx_hal_flash.o"
+"test sw\stm32f1xx_hal_rcc.o"
+"test sw\stm32f1xx_hal_pwr.o"
+"test sw\system_stm32f1xx.o"
+"test sw\stm32f1xx_it.o"
+"test sw\main.o"
+"test sw\stm32f1xx_hal_msp.o"
+"test sw\startup_stm32f103xe.o"
+--library_type=microlib --strict --scatter "TEST SW\TEST SW.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "TEST SW.map" -o "TEST SW\TEST SW.axf"

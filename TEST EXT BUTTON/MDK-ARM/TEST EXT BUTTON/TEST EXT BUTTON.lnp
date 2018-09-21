@@ -1,0 +1,22 @@
+--cpu Cortex-M3
+"test ext button\system_stm32f1xx.o"
+"test ext button\startup_stm32f103xe.o"
+"test ext button\stm32f1xx_hal_dma.o"
+"test ext button\stm32f1xx_hal_pwr.o"
+"test ext button\stm32f1xx_hal_flash_ex.o"
+"test ext button\stm32f1xx_hal_cortex.o"
+"test ext button\stm32f1xx_hal_rcc_ex.o"
+"test ext button\stm32f1xx_hal_flash.o"
+"test ext button\stm32f1xx_hal.o"
+"test ext button\stm32f1xx_hal_gpio.o"
+"test ext button\stm32f1xx_hal_gpio_ex.o"
+"test ext button\stm32f1xx_hal_rcc.o"
+"test ext button\stm32f1xx_hal_tim_ex.o"
+"test ext button\stm32f1xx_hal_tim.o"
+"test ext button\stm32f1xx_it.o"
+"test ext button\stm32f1xx_hal_msp.o"
+"test ext button\main.o"
+--library_type=microlib --strict --scatter "TEST EXT BUTTON\TEST EXT BUTTON.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "TEST EXT BUTTON.map" -o "TEST EXT BUTTON\TEST EXT BUTTON.axf"
